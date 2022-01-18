@@ -1,0 +1,160 @@
+/* Navbar */
+.navbar .flex {
+  justify-content: space-between;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar nav a {
+  margin: 10px 30px;
+  padding: 10px 20px;
+}
+
+.navbar ul a:hover {
+  border-bottom: 2px var(--light-color) solid;
+}
+
+.navbar h1 {
+  color: var(--light-color);
+}
+
+/* Showcase */
+.showcase {
+  position: relative;
+  overflow: auto;
+  overflow: visible;
+  height: 400px;
+}
+
+.showcase h1 {
+  color: var(--light-color);
+}
+
+.showcase .grid {
+  grid-template-columns: 4fr 3fr;
+  overflow: visible;
+}
+
+.showcase .form {
+  justify-self: flex-end;
+  width: 450px;
+  position: relative;
+  top: 70px;
+}
+
+.showcase .btn {
+  border-color: var(--light-color);
+}
+
+.showcase::before,
+.showcase::after {
+  content: "";
+  position: absolute;
+  height: 100px;
+  bottom: -70px;
+  right: 0;
+  left: 0;
+  background: var(--background-color);
+  transform: skewY(-3deg);
+  -webkit-transform: (-3deg);
+  -moz-transform: (-3deg);
+  -ms-transform: (-3deg);
+}
+
+/* Stats */
+.stats {
+  margin-top: 5rem;
+}
+
+.stats .lead {
+  margin: 1.25rem auto;
+  max-width: 600px;
+}
+
+.stats .flex {
+  justify-content: space-between;
+}
+
+.stats i {
+  margin: 10px;
+  padding: 40px;
+  background-color: var(--base-200);
+  border-radius: 50%;
+  color: var(--grey-900);
+}
+
+.stats .flex .lead {
+  color: var(--base-300);
+}
+
+.stats .flex .top {
+  color: var(--low-400);
+}
+
+/* cli */
+.cli .img {
+  border-radius: 10px;
+  background-color: var(--background-color);
+}
+
+.cli .card {
+  box-shadow: var(--shadow-2);
+}
+
+.cli .grid {
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.cli > .grid *:first-child {
+  grid-row: 1 / span 2;
+}
+
+/* Cloud */
+.cloud .grid {
+  grid-template-columns: 4fr 3fr;
+}
+
+.cloud h1 {
+  color: var(--light-color);
+}
+
+/* Languages */
+.languages .card {
+  width: fit-content;
+  transition: var(--transition-4);
+}
+
+.languages .card:hover {
+  transform: var(--transform-13);
+}
+
+.languages .flex {
+  gap: 5px;
+}
+
+.languages h3 {
+  margin-bottom: 15px;
+}
+
+/* Footer */
+.footer {
+  height: 250px;
+}
+
+.footer .quick-links a {
+  display: block;
+  margin: 10px;
+}
+
+.footer h1,
+.footer h2 {
+  color: var(--body-color);
+}
+
+.footer .social-media a:hover {
+  color: var(--grey-400);
+}
