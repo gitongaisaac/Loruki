@@ -1,3 +1,9 @@
+/* 
+================
+Home Page
+================ 
+*/
+
 /* Navbar */
 .navbar .flex {
   justify-content: space-between;
@@ -157,4 +163,31 @@
 
 .footer .social-media a:hover {
   color: var(--grey-400);
+}
+
+/* 
+================
+Features Page
+================ 
+*/
+
+/* Analytic */
+.analytic .img {
+  height: 250px;
+  width: auto;
+  justify-self: flex-end;
+}
+
+.analytic .lg {
+  color: var(--light-color);
+}
+
+/* Gin */
+.gin {
+  color: var(--grey-800);
+  background-color: var(--grey-300);
+}
+
+.gin .grid {
+  grid-template-columns: 4fr 2fr;
 }

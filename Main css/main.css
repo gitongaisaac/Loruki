@@ -434,7 +434,7 @@ i {
   max-width: var(--max-width-1);
   overflow: auto;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 40px;
 }
 
 .container-2 {
@@ -659,13 +659,14 @@ i {
   color: var(--low-500);
 }
 
+/* Card */
 .card {
+  /* width: 500px; */
   background-color: #fff;
   color: #333;
   padding: 20px;
   margin: 10px;
   border-radius: 10px;
-  width: 500px;
   box-shadow: var(--shadow-4);
 }
 
