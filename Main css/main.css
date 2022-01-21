@@ -407,7 +407,8 @@ a {
   color: var(--text-color);
 }
 
-a:hover {
+a:hover,
+a:focus {
   color: var(--primary-700);
 }
 
@@ -579,7 +580,8 @@ i {
   width: 100%;
 }
 
-.btn:hover {
+.btn:hover,
+.btn:focus {
   transform: scale(0.98);
 }
 
