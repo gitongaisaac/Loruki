@@ -6,8 +6,8 @@ Home Page
 /* Navbar */
 .navbar {
   padding: 0 20px;
-  background-color: var(--light-color);
-  border-bottom: 20px solid var(--dark-color);
+  /* background-color: var(--light-color);
+  border-bottom: 20px solid var(--dark-color); */
 }
 
 .navbar .flex {
@@ -21,18 +21,18 @@ Home Page
 .navbar nav a {
   margin: 10px 30px;
   padding: 10px 20px;
-  color: var(--text-color);
+  /* color: var(--text-color); */
 }
 
 .navbar ul a:hover {
   border-bottom: 2px var(--light-color) solid;
-  border-bottom: 2px var(--grey-400) solid;
+  /* border-bottom: 2px var(--grey-400) solid; */
 }
 
 .navbar h1 {
-  /* color: var(--light-color); */
+  color: var(--light-color);
   font-family: var(--fancyfont-3);
-  color: var(--secondary-500);
+  /* color: var(--secondary-500); */
 }
 
 /* Showcase */
