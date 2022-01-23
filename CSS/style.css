@@ -92,7 +92,6 @@ Home Page
 .stats .flex {
   justify-content: space-between;
   gap: 50px;
-  justify-content: center;
 }
 
 .stats i {
@@ -401,6 +400,10 @@ RESPOSNSIVE
 
   .showcase {
     height: 600px;
+  }
+
+  .stats .flex {
+    justify-content: center;
   }
 
   .analytic .img,
