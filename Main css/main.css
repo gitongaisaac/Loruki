@@ -1,17 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Neuton:wght@200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Neuton:wght@200&family=Roboto:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Neuton:wght@200&family=Roboto:wght@300&family=Sanchez&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Neuton:wght@200&family=Prata&family=Roboto:wght@300&family=Sanchez&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Karma:wght@500&family=Neuton:wght@200&family=Prata&family=Roboto:wght@300&family=Sanchez&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karma:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Proza+Libre&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Trirong&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Taviraj&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Taviraj:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Eczar&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Gentium+Basic&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
@@ -218,38 +219,42 @@
   --red-800: #660000;
   --red-900: #330000;
 
-  /* Dark and light */
+  /* Other colors */
+  --background-color: var(--grey-100);
+  --text-color: var(--dark-color);
   --bg-dark: #002240;
   --dark-color: #000000;
+  --lessdark: #333;
   --light-color: #ffffff;
   --link-color: #0000ff;
 
   /*Heading fonts */
-  --headingfont-1: "Neuton", sans-serif; /* */ /* */
-  --headingfont-2: "Prata", sans-serif;
-  --headingfont-3: "Lato", sans-serif; /* */ /* */
+  --headingfont-1: "Neuton", sans-serif; /* light */ /* */
+  --headingfont-2: "Prata", sans-serif; /* heavy */
+  --headingfont-3: "Lato", sans-serif; /* Light */ /* */
   --headingfont-4: "Cormorant Garamond", sans-serif; /* */ /* */
   --headingfont-5: "Gentium Basic", sans-serif; /* */ /* */
   --headingfont-6: "Trirong", sans-serif; /* */
   --headingfont-7: "Proza Libre", sans-serif;
   --headingfont-8: "Libre Franklin", sans-serif;
-  --headingfont-9: "Work Sans", sans-serif;
+  --headingfont-9: "Work Sans", sans-serif; /* */ /* */
   --headingfont-10: "Montserrat", sans-serif;
   --headingfont-11: "Josefin Sans", sans-serif;
   --headingfont-12: "Lateef", sans-serif;
 
   /* Body fonts */
-  --bodyfont-1: "Roboto", sans-serif; /* */
-  --bodyfont-2: "Sanchez", sans-serif; /* */
-  --bodyfont-3: "karma", sans-serif; /* */
-  --bodyfont-4: "Nunito", sans-serif; /* */
-  --bodyfont-5: "Proza Libre", sans-serif;
-  --bodyfont-6: "Libre Franklin", sans-serif; /* */
+  --bodyfont-1: "Roboto", sans-serif; /* light */ /* */
+  --bodyfont-2: "Sanchez", sans-serif; /* heavy */
+  --bodyfont-3: "karma", sans-serif; /* light */
+  --bodyfont-4: "Nunito", sans-serif; /* light */ /* */
+  --bodyfont-5: "Proza Libre", sans-serif; /* heavy */
+  --bodyfont-6: "Libre Franklin", sans-serif; /* light */ /* */
   --bodyfont-7: "Libre Baskerville", sans-serif;
-  --bodyfont-8: "Trirong", sans-serif; /* */
-  --bodyfont-9: "Rubik", sans-serif; /* */ /* */
-  --bodyfont-10: "Work Sans", sans-serif; /* */ /* */
-  --bodyfont-11: "Taviraj", sans-serif; /* */ /* */
+  --bodyfont-8: "Trirong", sans-serif; /* medium */
+  --bodyfont-9: "Rubik", sans-serif; /* light */ /* */
+  --bodyfont-10: "Work Sans", sans-serif; /* light */ /* */
+  --bodyfont-11: "Taviraj", sans-serif; /* light */ /* */
+  --bodyfont-12: "Lato", sans-serif; /* light */ /* */
 
   /* Fancy fonts */
   --fancyfont-1: "Eczar", sans-serif;
@@ -301,7 +306,7 @@
   --transition-5: transform 0.3s ease-in;
   --transition-6: transform 0.5s ease-in;
 
-  /* TRANSFORMS */
+  /* TRANSFORMATIONS */
   /* Transforms on the Y axes*/
   --transform-11: translateY(-3px);
   --transform-12: translateY(-5px);
@@ -337,12 +342,28 @@
     0 4px 6px -2px rgba(0, 0, 0, 0.05);
   --shadow-4: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
     0 10px 10px -5px rgba(0, 0, 0, 0.04);
-
-  /* Other variables */
-  --background-color: var(--grey-100);
-  --text-color: var(--dark-color);
 }
 
+/* Scrollbar */
+body::-webkit-scrollbar {
+  width: 12px; /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--body-color); /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--grey-700); /* color of the scroll thumb */
+  border-radius: 50px; /* roundness of the scroll thumb */
+  border: 3px solid var(--grey-300); /* creates padding around scroll thumb */
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: var(--grey-600);
+}
+
+/* Prototype */
 html {
   font-size: 100%;
 }
@@ -361,7 +382,7 @@ html {
 body {
   line-height: 1.75;
   font-size: var(--font-size-1);
-  font-family: var(--bodyfont-11);
+  font-family: var(--bodyfont-1);
   background-color: var(--background-color);
   color: var(--text-color);
 }
@@ -423,6 +444,13 @@ ul {
 }
 
 i {
+  padding: 10px;
+}
+
+code,
+pre {
+  background: var(--grey-900);
+  color: #fff;
   padding: 10px;
 }
 
