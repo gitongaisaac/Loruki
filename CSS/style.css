@@ -1,15 +1,16 @@
 /* 
-================
+================================================================================================================================
 Home Page
-================ 
+================================================================================================================================
 */
-/* Navbar */
+
+/* ===== navbar ===== */
 .navbar {
   /* animation: slideInFromTop 1s ease-in; */
   padding: 0 20px;
-  background-color: var(--light-color);
+  /* background-color: var(--light-color);
   margin-bottom: 20px;
-  box-shadow: var(--shadow-2);
+  box-shadow: var(--shadow-2); */
 }
 
 .navbar .flex {
@@ -23,19 +24,19 @@ Home Page
 .navbar nav a {
   margin: 10px 30px;
   padding: 10px 20px;
-  color: var(--text-color);
+  color: var(--bodycolor);
 }
 
 .navbar ul a:hover {
-  border-bottom: 2px var(--grey-500) solid;
+  border-bottom: 2px var(--grey-200) solid;
 }
 
 .navbar h1 {
-  color: var(--secondary-500);
+  color: var(--bodycolor);
   font-family: var(--fancyfont-3);
 }
 
-/* Showcase */
+/* ===== showcase ===== */
 .showcase {
   padding: 0 20px;
   position: relative;
@@ -84,7 +85,7 @@ Home Page
   -ms-transform: (-3deg);
 }
 
-/* Stats */
+/* ===== stats ===== */
 .stats {
   margin-top: 5rem;
   animation: slideInFromBottom 1s ease-in;
@@ -116,7 +117,7 @@ Home Page
   color: var(--low-400);
 }
 
-/* cli */
+/* ===== cli ===== */
 .cli .img {
   border-radius: 10px;
   background-color: var(--background-color);
@@ -136,7 +137,7 @@ Home Page
   grid-row: 1 / span 2;
 }
 
-/* Cloud */
+/* ===== cloud ===== */
 .cloud .grid {
   grid-template-columns: 4fr 3fr;
 }
@@ -145,7 +146,7 @@ Home Page
   color: var(--light-color);
 }
 
-/* Languages */
+/* ===== languages ===== */
 .languages .card {
   width: fit-content;
   transition: var(--transition-4);
@@ -163,7 +164,7 @@ Home Page
   margin-bottom: 15px;
 }
 
-/* Footer */
+/* ===== footer ===== */
 .footer {
   height: 250px;
   padding-top: 3rem;
@@ -188,12 +189,12 @@ Home Page
 }
 
 /* 
-================
+================================================================================================================================
 Features Page
-================ 
+================================================================================================================================
 */
 
-/* Analytic */
+/* ===== Analytic ===== */
 .analytic {
   height: 300px;
   padding: 0 20px;
@@ -209,7 +210,7 @@ Features Page
   color: var(--light-color);
 }
 
-/* Gin */
+/* ===== gin color modification ===== */
 .gin {
   color: var(--grey-800);
   background-color: var(--grey-300);
@@ -219,7 +220,7 @@ Features Page
   grid-template-columns: 4fr 2fr;
 }
 
-/* Array */
+/* ===== Array ===== */
 .array .card {
   box-shadow: var(--shadow-2);
 }
@@ -260,11 +261,12 @@ Features Page
 }
 
 /* 
-================
+================================================================================================================================
 Docs Page
-================ 
+================================================================================================================================
 */
-/* docs */
+
+/* ===== Docs ===== */
 .docs .xl {
   color: var(--body-color);
 }
@@ -279,7 +281,7 @@ Docs Page
   grid-template-columns: 4fr 3fr;
 }
 
-/* Info */
+/* ===== info ===== */
 .info {
   padding: 30px;
 }
@@ -301,10 +303,11 @@ Docs Page
 }
 
 /* 
-================
+================================================================================================================================
 Animations
-================ 
+================================================================================================================================
 */
+
 @keyframes slideInFromLeft {
   0% {
     transform: translateX(-100%);
@@ -346,12 +349,13 @@ Animations
 }
 
 /* 
-================
-RESPOSNSIVE
-================ 
+================================================================================================================================
+Meadia queries and Responsiveness
+================================================================================================================================
 */
+
 @media (max-width: 820px) {
-  /* Grids */
+  /* ===== Grids ===== */
   .showcase .grid,
   .cli .grid,
   .cloud .grid,
@@ -360,7 +364,7 @@ RESPOSNSIVE
     grid-template-rows: 1fr;
   }
 
-  /* Showcase */
+  /* ===== showcase ===== */
   .showcase {
     height: 550px;
     padding-top: 1rem;
@@ -382,12 +386,12 @@ RESPOSNSIVE
     top: 0px;
   }
 
-  /* CLI */
+  /* ===== cli ===== */
   .cli .card {
     text-align: center;
   }
 
-  /* Cloud */
+  /* ===== cloud ===== */
   .cloud .img {
     height: 300px;
     width: auto;
@@ -398,7 +402,7 @@ RESPOSNSIVE
     max-width: 100%;
   }
 
-  /* gin */
+  /* ===== gin color modification ===== */
   .gin .img {
     height: 300px;
     width: auto;
@@ -413,7 +417,7 @@ RESPOSNSIVE
     max-width: 100%;
   }
 
-  /* Array */
+  /* ===== Array ===== */
   .array .grid {
     grid-template-columns: 1fr;
   }
@@ -427,7 +431,7 @@ RESPOSNSIVE
     justify-content: flex-start;
   }
 
-  /* info */
+  /* ===== info ===== */
   .info .grid {
     grid-template-columns: 1fr;
   }
@@ -443,7 +447,7 @@ RESPOSNSIVE
 }
 
 @media (max-width: 720px) {
-  /* Navbar */
+  /* ===== navbar ===== */
   .navbar {
     height: 135px;
     text-align: center;
@@ -470,7 +474,7 @@ RESPOSNSIVE
     height: 180px;
   }
 
-  /* Footer */
+  /* ===== footer ===== */
   .footer {
     height: 350px;
   }
