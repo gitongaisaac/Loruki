@@ -20,4 +20,4 @@ This website covers some major topics such as:
 
 This project features no CSS frameworks or anything, it is pure CSS, it neither covers any other languages, just HTML and CSS. The project is a custom of the original one that was created by Brad in his YouTube channel.
 
-It is fully responsive and after i deploy it to netlify i will attach the link.
+You can find this website on netlify. [Loruki](https://dynamic-gumption-d8bd7f.netlify.app/index.html)
