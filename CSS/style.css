@@ -564,16 +564,6 @@ Meadia queries and Responsiveness
   }
 }
 
-/* @media (max-width: 490) {
-  .info .links.card {
-    width: 370px;
-  }
-
-  .info .card {
-    width: 370px;
-  }
-} */
-
 @media (max-width: 470px) {
   .showcase .grid .form {
     width: 370px;
