@@ -1,29 +1,28 @@
 /* 
 ================================================================================================================================
+================================================================================================================================
 Home Page
+================================================================================================================================
 ================================================================================================================================
 */
 
-/* ===== navbar ===== */
-.navbar {
-  /* animation: slideInFromTop 1s ease-in; */
-  padding: 0 20px;
-  /* background-color: var(--light-color);
-  margin-bottom: 20px;
-  box-shadow: var(--shadow-2); */
-}
-
+/* 
+================================================================================================================================
+Navbar
+================================================================================================================================
+*/
 .navbar .flex {
   justify-content: space-between;
+  align-items: center;
 }
 
 .navbar ul {
   display: flex;
 }
 
-.navbar nav a {
-  margin: 10px 30px;
-  padding: 10px 20px;
+.navbar ul a {
+  margin: 5px 30px;
+  padding: 5px 20px;
   color: var(--bodycolor);
 }
 
@@ -36,13 +35,19 @@ Home Page
   font-family: var(--fancyfont-3);
 }
 
-/* ===== showcase ===== */
+/* 
+================================================================================================================================
+Showcase
+================================================================================================================================
+*/
 .showcase {
-  padding: 0 20px;
+  /* padding: 0 20px; */
   position: relative;
-  overflow: auto;
-  overflow: visible;
   height: 400px;
+}
+
+.showcase .container-1 {
+  overflow: visible;
 }
 
 .showcase h1 {
@@ -51,7 +56,8 @@ Home Page
 
 .showcase .grid {
   grid-template-columns: 4fr 3fr;
-  overflow: visible;
+  padding: 0 10px;
+  margin: 0 10px;
 }
 
 .showcase-text {
@@ -85,7 +91,11 @@ Home Page
   -ms-transform: (-3deg);
 }
 
-/* ===== stats ===== */
+/* 
+================================================================================================================================
+Stats
+================================================================================================================================
+*/
 .stats {
   margin-top: 5rem;
   animation: slideInFromBottom 1s ease-in;
@@ -117,7 +127,11 @@ Home Page
   color: var(--low-400);
 }
 
-/* ===== cli ===== */
+/* 
+================================================================================================================================
+Cli
+================================================================================================================================
+*/
 .cli .img {
   border-radius: 10px;
   background-color: var(--background-color);
@@ -137,16 +151,25 @@ Home Page
   grid-row: 1 / span 2;
 }
 
-/* ===== cloud ===== */
+/* 
+================================================================================================================================
+Cloud
+================================================================================================================================
+*/
 .cloud .grid {
   grid-template-columns: 4fr 3fr;
+  padding: 0 10px;
 }
 
 .cloud h1 {
   color: var(--light-color);
 }
 
-/* ===== languages ===== */
+/* 
+================================================================================================================================
+Languages
+================================================================================================================================
+*/
 .languages .card {
   width: fit-content;
   transition: var(--transition-4);
@@ -164,7 +187,11 @@ Home Page
   margin-bottom: 15px;
 }
 
-/* ===== footer ===== */
+/* 
+================================================================================================================================
+Footer
+================================================================================================================================
+*/
 .footer {
   height: 250px;
   padding-top: 3rem;
@@ -190,7 +217,9 @@ Home Page
 
 /* 
 ================================================================================================================================
+================================================================================================================================
 Features Page
+================================================================================================================================
 ================================================================================================================================
 */
 
@@ -364,10 +393,15 @@ Meadia queries and Responsiveness
     grid-template-rows: 1fr;
   }
 
+  /* ====== Navbar ======= */
+  .navbar .flex {
+    height: 120px;
+  }
+
   /* ===== showcase ===== */
   .showcase {
     height: 550px;
-    padding-top: 1rem;
+    padding-top: 0rem;
   }
 
   .showcase-text {
@@ -487,26 +521,97 @@ Meadia queries and Responsiveness
   .footer .social-media {
     text-align: center;
   }
+}
 
-  @media (max-width: 500px) {
-    .analytic .grid,
-    .docs .grid {
-      grid-template-columns: 1fr;
-    }
+@media (max-width: 500px) {
+  .navbar ul {
+    /* background-color: red; */
+    padding: 5px;
+    border-top: 1px solid var(--grey-500);
+    border-bottom: 1px solid var(--grey-500);
+    border-radius: 3px;
+  }
 
-    .analytic,
-    .docs {
-      height: auto;
-    }
+  .analytic .grid,
+  .docs .grid {
+    grid-template-columns: 1fr;
+  }
 
-    .analytic .img,
-    .docs .img {
-      justify-self: center;
-    }
+  .analytic,
+  .docs {
+    height: auto;
+  }
 
-    .analytic .analytic-text,
-    .docs .docs-text {
-      text-align: center;
-    }
+  .analytic .img,
+  .docs .img {
+    justify-self: center;
+  }
+
+  .analytic .analytic-text,
+  .docs .docs-text {
+    text-align: center;
+  }
+}
+
+@media (max-width: 470px) {
+  .showcase .grid .form {
+    width: 370px;
+  }
+}
+
+@media (max-width: 440px) {
+  .cloud {
+    height: 650px;
+  }
+
+  .cloud .img {
+    height: 250px;
+    width: auto;
+  }
+}
+
+@media (max-width: 486px) {
+}
+
+@media (max-width: 395px) {
+  .navbar ul a {
+    margin: 5px 10px;
+    padding: 5px 10px;
+    color: var(--bodycolor);
+  }
+
+  .form-control {
+    background-color: transparent;
+    margin: 10px 0;
+    padding: 10px 0;
+  }
+
+  .showcase .grid .form {
+    width: 320px;
+  }
+
+  .footer {
+    height: 400px;
+  }
+}
+
+@media (max-width: 365px) {
+  .cloud {
+    height: 550px;
+  }
+
+  .cloud .img {
+    height: 200px;
+    width: auto;
+  }
+}
+
+@media (max-width: 320px) {
+  .showcase {
+    height: 650px;
+  }
+
+  .showcase .grid .form {
+    width: 270px;
   }
 }
