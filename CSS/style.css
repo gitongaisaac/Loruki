@@ -479,6 +479,15 @@ Meadia queries and Responsiveness
 }
 
 @media (max-width: 720px) {
+  .container-1,
+  .container-2,
+  .container-3,
+  .container-4,
+  .container-5,
+  .container-6,
+  .container-7 {
+    padding: 0 5px;
+  }
   /* ===== navbar ===== */
   .navbar {
     height: 135px;
@@ -554,6 +563,16 @@ Meadia queries and Responsiveness
     text-align: center;
   }
 }
+
+/* @media (max-width: 490) {
+  .info .links.card {
+    width: 370px;
+  }
+
+  .info .card {
+    width: 370px;
+  }
+} */
 
 @media (max-width: 470px) {
   .showcase .grid .form {
