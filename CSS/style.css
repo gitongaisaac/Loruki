@@ -506,6 +506,10 @@ Meadia queries and Responsiveness
     height: 180px;
   }
 
+  .info .grid {
+    overflow: hidden;
+  }
+
   /* ===== footer ===== */
   .footer {
     height: 350px;
@@ -555,6 +559,14 @@ Meadia queries and Responsiveness
   .showcase .grid .form {
     width: 370px;
   }
+
+  .info .links.card {
+    width: 350px;
+  }
+
+  .info .card {
+    width: 350px;
+  }
 }
 
 @media (max-width: 440px) {
@@ -568,7 +580,20 @@ Meadia queries and Responsiveness
   }
 }
 
-@media (max-width: 486px) {
+@media (max-width: 415px) {
+  .info .links.card {
+    width: 300px;
+  }
+
+  .info .card {
+    width: 300px;
+  }
+}
+
+@media (max-width: 410px) {
+  .footer {
+    height: 450px;
+  }
 }
 
 @media (max-width: 395px) {
@@ -587,10 +612,6 @@ Meadia queries and Responsiveness
   .showcase .grid .form {
     width: 320px;
   }
-
-  .footer {
-    height: 400px;
-  }
 }
 
 @media (max-width: 365px) {
@@ -602,6 +623,24 @@ Meadia queries and Responsiveness
     height: 200px;
     width: auto;
   }
+
+  .info .links.card {
+    width: 250px;
+  }
+
+  .info .card {
+    width: 250px;
+  }
+}
+
+@media (max-width: 370px) {
+  .array .card.flex {
+    flex-direction: column;
+  }
+
+  .info pre {
+    font-size: 10px;
+  }
 }
 
 @media (max-width: 320px) {
@@ -611,5 +650,21 @@ Meadia queries and Responsiveness
 
   .showcase .grid .form {
     width: 270px;
+  }
+
+  .info .links.card {
+    width: 220px;
+  }
+
+  .info .card {
+    width: 220px;
+  }
+
+  .gin {
+    height: 750px;
+  }
+
+  .gin-text p {
+    padding: 0 10px;
   }
 }

@@ -386,6 +386,11 @@ Containers width
   --max-width-3: 1300px;
   --max-width-4: 1400px;
   --max-width-5: 1500px;
+  --max-width-6: 1600px;
+  --max-width-7: 1700px;
+  --max-width-8: 1800px;
+  --max-width-9: 1900px;
+  --max-width-10: 2000px;
 
   /* 
 ================================================================================================================================
@@ -751,6 +756,48 @@ Containers
 
 .container-4 {
   max-width: var(--max-width-4);
+  overflow: auto;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.container-5 {
+  max-width: var(--max-width-5);
+  overflow: auto;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.container-6 {
+  max-width: var(--max-width-6);
+  overflow: auto;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.container-7 {
+  max-width: var(--max-width-7);
+  overflow: auto;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.container-8 {
+  max-width: var(--max-width-8);
+  overflow: auto;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.container-8 {
+  max-width: var(--max-width-9);
+  overflow: auto;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.container-8 {
+  max-width: var(--max-width-10);
   overflow: auto;
   margin: 0 auto;
   padding: 0 20px;
