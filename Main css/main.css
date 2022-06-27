@@ -469,7 +469,7 @@ Scrollsbar
 */
 
 body::-webkit-scrollbar {
-  width: 1vw; /* width of the entire scrollbar */
+  width: 0.7vw; /* width of the entire scrollbar */
   height: 1vh;
 }
 
